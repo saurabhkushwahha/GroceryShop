@@ -1,0 +1,107 @@
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 80px;
+    padding: 0 10vw;
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(35%, 500px);
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.place-order-left .title {
+    font-size: 26px;
+    font-weight: 600;
+    color: limegreen; /* Lime green title for better contrast */
+    margin-bottom: 30px;
+}
+
+.place-order-left input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ccc; /* Slightly thicker border */
+    border-radius: 6px;
+    outline-color: limegreen; /* Lime green focus color */
+    transition: border-color 0.3s ease;
+}
+
+.place-order-left input:focus {
+    border-color: limegreen;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 20px;
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+    background-color: #f1f1f1;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.place-order .cart-total {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-total h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: limegreen;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #555;
+}
+
+.cart-total hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #eaeaea;
+}
+
+.cart-total button {
+    background-color: limegreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.cart-total button:hover {
+    background-color: #39a839;
+}
+
+@media (max-width: 750px) {
+    .place-order {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,170 @@
+
+.navbar{
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 150px;
+    height: 100px;
+}
+.navbar-search-icon >img{
+    width: 30px;
+    height: 30px;
+}
+.navbar-menu{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    padding: 30px
+
+}
+.navbar-menu>li{
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.navbar-right{
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+
+}
+.navbar-right .search{
+    height: 1.8vw;
+    width: 1.8vw;
+
+}
+.navbar-right .basket{
+  height: 35px;
+  width: 35px;
+
+}
+.navbar-right>button{
+    width: 80px;
+    /* height: 35px; */
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+    /* font-family: outfit; */
+    background:rgba(50, 205, 50, 0.89);
+}
+.navbar-right>button:hover{
+    background-color: rgba(69, 179, 69, 0.938);
+
+}
+.navbar-search-icon{
+    position: relative;
+}
+.dot{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: tomato;
+    border-radius:50%;
+    margin-top: -35px;
+    margin-left: 27px;
+}
+.active{
+
+
+    border-bottom: 2px solid black;
+    border-bottom-style:outset;
+
+}
+@media (max-width:1050px){
+  .navbar .logo{
+    width: 140px;
+  }
+  .navbar-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+  .navbar-right{
+    gap:30px;
+  }
+  .navbar-right img{
+        width: 22px;
+  }
+  .navbar-right button{
+          padding: 8px 25px;
+  }
+
+}
+
+
+.navbar-profile{
+  position: relative;
+
+}
+.nav-profile-dropdown{
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  top: 40px;
+  gap: 10px;
+  background-color: #fff2ef;
+  padding: 5px 25px;
+  border-radius:4px;
+  border: 1px solid tomato;
+  outline: 2px solid white;
+  list-style: none;
+}
+.nav-profile-dropdown li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.nav-profile-dropdown img{
+  width:20px;
+}
+.nav-profile-dropdown li:hover{
+  color:tomato;
+}
+@media (max-width:900px){
+    .navbar .logo{
+      width: 120px;
+    }
+    .navbar-menu{
+      gap: 15px;
+      font-size: 16px;
+    }
+    .navbar-right{
+      gap:20px;
+    }
+    .navbar-right img{
+          width: 20px;
+    }
+    .navbar-right button{
+            padding: 7px 20px;
+            font-size: 15px;
+    }
+
+  }
+
+  @media (max-width:750px){
+
+    .navbar-menu{
+     display: none;
+    }
+
+  }
+.navbar{
+  h1{
+    padding-left: 5vw;
+    color: limegreen;
+    span{
+      color:black;
+    }
+  }
+}

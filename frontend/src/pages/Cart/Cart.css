@@ -1,0 +1,134 @@
+.cart {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding: 20px; /* Added padding */
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: gray;
+    font-size: max(1vw, 12px);
+}
+
+.cart-items-item {
+    margin: 15px 0px; /* Increased margin */
+    color: black;
+}
+
+.cart-items-item img {
+    width: 70px;
+    border-radius: 8px; /* Added border-radius for smoother look */
+}
+
+.cart hr {
+    height: 1px;
+    background-color: #2e2e2e;
+    border: none;
+}
+
+.cart-items-item .cross {
+    cursor: pointer;
+    font-size: 16px;
+    color: #ff1744; /* Slightly brighter color for the remove icon */
+}
+
+.cart-bottom {
+    margin: 50px 80px; /* Adjusted margin */
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Increased gap */
+    padding: 20px; /* Added padding for a more polished look */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cart-total hr {
+    margin: 10px 0px;
+}
+
+.cart-total button {
+    border: none;
+    color: white;
+    background-color: limegreen; /* Lime green button */
+    cursor: pointer;
+    width: max(15vw, 200px);
+    padding: 14px 0px; /* Adjusted padding */
+    border-radius: 6px; /* Increased border-radius */
+    font-size: 16px; /* Slightly larger font */
+    transition: 0.3s;
+}
+
+.cart-total button:hover {
+    background-color: #32cd32; /* Slightly darker shade on hover */
+}
+
+.cart-promocode {
+    flex: 1;
+    padding: 20px; /* Added padding */
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.cart-promocode p {
+    color: #555;
+}
+
+.cart-promocode-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 6px; /* Slightly increased border-radius */
+    padding: 8px; /* Added padding inside promo code input */
+}
+
+.cart-promocode-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    flex: 1;
+}
+
+.cart-promocode-input button {
+    width: max(10vw, 150px);
+    padding: 12px 10px; /* Adjusted padding */
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 6px; /* Increased border-radius */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-promocode-input button:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+@media (max-width: 750px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .cart-promocode {
+        justify-content: start;
+    }
+}

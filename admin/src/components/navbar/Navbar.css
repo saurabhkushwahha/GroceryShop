@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 6%; /* Increased padding for more space */
+}
+
+.navbar .logo {
+    width: max(10%, 80px);
+}
+.navbar h1{
+    color: limegreen;
+    span{
+        font-size:medium;
+        color: black;
+    }
+}
+
+.navbar .profile {
+    width: 40px;
+    border-radius: 50%; /* Optional: add a round shape to the profile image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}

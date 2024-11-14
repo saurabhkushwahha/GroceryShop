@@ -1,0 +1,62 @@
+.header {
+    position: relative;
+    width:100%;
+    /* Add any additional styling here */
+}
+
+.header > img {
+    width: 95%;
+    height: 75vh;
+    margin: 0 2.5%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.header-contents {
+    position: absolute;
+    font-family: outfit ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 15%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: white;
+    max-width: 90%;
+    font-size: 1.5vw;
+}
+.header-contents button{
+    border:none;
+    color: green;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color:white;
+    border-radius: 15px;
+    font-size: max(1vw,13px);
+}
+@media (max-width:1050px) {
+   .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px) {
+
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display:none;
+    }
+    .header-contents button{
+        padding:2vw 4vw;
+    }
+}
